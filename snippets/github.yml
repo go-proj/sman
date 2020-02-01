@@ -14,4 +14,4 @@ sman:
   do: copy
   desc: install sman
   command: |
-    sh -c "$(curl https://raw.githubusercontent.com/tokozedg/sman/master/install.sh)"
+    sh -c "$(curl https://raw.githubusercontent.com/go-proj/sman/master/install.sh)"
