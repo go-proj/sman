@@ -17,11 +17,11 @@ func TestTopsFromRanks(t *testing.T) {
 			[]string(nil),
 		},
 		{"single matched",
-			fuzzy.Ranks{{"fir", "first", 3}, {"fir", "second", 8}},
+			fuzzy.Ranks{{"fir", "first", 3, 1}, {"fir", "second", 8, 2}},
 			[]string{"first"},
 		},
 		{"multiple matched",
-			fuzzy.Ranks{{"fir", "first", 3}, {"fir", "second", 3}, {"fir", "invalid", 8}},
+			fuzzy.Ranks{{"fir", "first", 3, 1}, {"fir", "second", 3, 2}, {"fir", "invalid", 8, 3}},
 			[]string{"first", "second"},
 		},
 	}
